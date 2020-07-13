@@ -1,0 +1,42 @@
+<div class="container">
+
+    <div class="logo">Login</div>
+
+    <div _ngcontent-jqu-c110="" class="toolbar__title">
+        <app-back-button _ngcontent-anj-c110="" link="/menu">
+            <div class="toolbar__button toolbar-back-button">-></div>
+        </app-back-button>
+
+        <span _ngcontent-jqu-c110="" translate="">Sign In to Order from </span>
+        <span _ngcontent-jqu-c110=""> Drish</span>
+    </div>
+
+    <div class="login-item">
+
+        <form class="form form-login" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="alert alert-danger" [hidden]="!error">{{ error }}</div>
+
+            <div class="form-field">
+                <input formControlName="email" id="login-email" type="email" class="form-control" placeholder="Email" email>
+                <span class="help-block" *ngIf="loginForm.get('email').invalid && loginForm.get('email').touched ">Please enter
+          a valid email</span>
+            </div>
+
+            <div class="form-field">
+
+                <input formControlName="password" id="login-password" type="password" class="form-control" placeholder="Password">
+
+                <span class="help-block" *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched ">Please
+          enter a valid Password</span>
+
+            </div>
+
+            <div class="form-field">
+                <input type="submit" [disabled]='loginForm.get("email").invalid' value="Log in">
+                <!-- <input type="submit" value="Log in"> -->
+            </div>
+        </form>
+        <div class="float-right"><a routerLink="/register">SignUp</a>
+        </div>
+    </div>
+</div>

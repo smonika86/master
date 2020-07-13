@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ComponentFactoryResolver, ANALYZE_FOR_ENTRY_COMPONENTS } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'myapp';
+ 
+
 }

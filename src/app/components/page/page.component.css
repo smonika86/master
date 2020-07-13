@@ -1,0 +1,70 @@
+.wrapper[_ngcontent-fqq-c46] {
+    display: -webkit-box;
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+    z-index: 4;
+    background: #f9f9f9;
+    opacity: 1;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease
+}
+
+.root.ltr[_nghost-fqq-c46] .wrapper[_ngcontent-fqq-c46],
+.root.ltr [_nghost-fqq-c46] .wrapper[_ngcontent-fqq-c46] {
+    left: 0
+}
+
+.root.rtl[_nghost-fqq-c46] .wrapper[_ngcontent-fqq-c46],
+.root.rtl [_nghost-fqq-c46] .wrapper[_ngcontent-fqq-c46] {
+    right: 0
+}
+
+.root.ltr[_ngcontent-fqq-c46] .wrapper[_ngcontent-fqq-c46] {
+    left: 0
+}
+
+.root.rtl[_ngcontent-fqq-c46] .wrapper[_ngcontent-fqq-c46] {
+    right: 0
+}
+
+.wrapper--loaded[_ngcontent-fqq-c46] {
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease
+}
+
+.wrapper[_ngcontent-fqq-c46] .spinner-wrapper[_ngcontent-fqq-c46] {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
